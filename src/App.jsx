@@ -7,6 +7,8 @@ import HowItWorksSection from './components/HowItWorksSection';
 import HardwareSection from './components/HardwareSection';
 import FirmwareCloudSection from './components/FirmwareCloudSection';
 import PerformanceSection from './components/PerformanceSection';
+import DataVisualizationSection from './components/DataVisualizationSection';
+import ChallengesLearningsSection from './components/ChallengesLearningsSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
         <HowItWorksSection />
         <HardwareSection />
         <FirmwareCloudSection />
+        <DataVisualizationSection />
         <PerformanceSection />
+        <ChallengesLearningsSection />
       </main>
       <Footer />
     </div>
