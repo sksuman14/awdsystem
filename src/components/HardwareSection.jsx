@@ -58,7 +58,7 @@ const HardwareSection = () => {
             <ul style={{ paddingLeft: '1.5rem', listStyle: 'disc', marginTop: '1rem' }}>
               <li>Reliable hydraulic control.</li>
               <li>Battery-operated for years.</li>
-              <li>Motorized butterfly valves supported for larger installations.</li>
+              <li>Motorized valves supported for larger installations.</li>
             </ul>
           </div>
 
