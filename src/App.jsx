@@ -1,33 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import WhyAWDSection from './components/WhyAWDSection';
-import HowItWorksSection from './components/HowItWorksSection';
-import HardwareSection from './components/HardwareSection';
-import FirmwareCloudSection from './components/FirmwareCloudSection';
-import PerformanceSection from './components/PerformanceSection';
-import DataVisualizationSection from './components/DataVisualizationSection';
-import ChallengesLearningsSection from './components/ChallengesLearningsSection';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import SensorsData from './pages/SensorsData';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <WhyAWDSection />
-        <HowItWorksSection />
-        <HardwareSection />
-        <FirmwareCloudSection />
-        <DataVisualizationSection />
-        <PerformanceSection />
-        <ChallengesLearningsSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sensors" element={<SensorsData />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

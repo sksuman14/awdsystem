@@ -9,25 +9,25 @@ const HowItWorksSection = () => {
     { 
       id: 0,
       icon: <Settings className="h-6 w-6" />,
-      title: '1. Installation', 
+      title: '1. Installation (+5cm Flood)', 
       desc: 'A perforated PVC field water tube is installed to monitor subsurface water conditions (-15cm to +5cm).' 
     },
     { 
       id: 1,
       icon: <Droplets className="h-6 w-6" />,
-      title: '2. Drying Phase', 
+      title: '2. Drying Phase (Water Receding)', 
       desc: 'Water recedes naturally. Soil oxygen spikes, shutting down methane production without stressing the crop.' 
     },
     { 
       id: 2,
       icon: <Radio className="h-6 w-6" />,
-      title: '3. Critical Threshold', 
+      title: '3. Critical Threshold (-15cm)', 
       desc: 'At exactly -15cm, the lower magnetic float switch triggers, and the BLE node transmits the event.' 
     },
     { 
       id: 3,
       icon: <PlayCircle className="h-6 w-6" />,
-      title: '4. Automated Reflood', 
+      title: '4. Automated Reflood (+5cm)', 
       desc: 'Latching solenoid valve opens, reflooding the field to +5cm to suppress weeds before closing again.' 
     },
   ];
@@ -127,9 +127,9 @@ const HowItWorksSection = () => {
                 style={{ position: 'absolute', top: '20px', right: '20px', padding: '10px 15px', backgroundColor: 'rgba(255,255,255,0.9)', borderRadius: '8px', fontWeight: 'bold', fontSize: '0.9rem', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', color: '#1e293b' }}
               >
                 {activeStep === 0 && 'System Installed (+5cm Flood)'}
-                {activeStep === 1 && 'Drying (Aerobic Zone Active)'}
+                {activeStep === 1 && 'Drying (Water Receding)'}
                 {activeStep === 2 && 'Threshold Reached (-15cm)'}
-                {activeStep === 3 && 'Valve Open (Reflooding)'}
+                {activeStep === 3 && 'Valve Open (+5cm Reflood)'}
               </motion.div>
             </AnimatePresence>
 
