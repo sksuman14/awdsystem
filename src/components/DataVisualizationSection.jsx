@@ -42,7 +42,7 @@ const DataVisualizationSection = () => {
           >
             <h4 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>Water Level vs. Time</h4>
             <div style={{ width: '100%', height: 300 }}>
-              <ResponsiveContainer>
+              <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(0,0,0,0.1)" />
                   <XAxis dataKey="day" label={{ value: 'Time (Days)', position: 'insideBottom', offset: -10 }} />
@@ -70,7 +70,7 @@ const DataVisualizationSection = () => {
           >
             <h4 style={{ marginBottom: '1.5rem', color: '#ef4444' }}>Soil Oxygen (Redox Potential)</h4>
             <div style={{ width: '100%', height: 300 }}>
-              <ResponsiveContainer>
+              <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                   <defs>
                     <linearGradient id="colorRedox" x1="0" y1="0" x2="0" y2="1">

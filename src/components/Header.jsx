@@ -36,6 +36,7 @@ const Header = () => {
           <a href="/#how-it-works" style={{ fontWeight: '500', transition: 'color 0.2s', textDecoration: 'none', color: 'var(--text-color)' }}>How it Works</a>
           <a href="/#hardware" style={{ fontWeight: '500', transition: 'color 0.2s', textDecoration: 'none', color: 'var(--text-color)' }}>Hardware</a>
           <a href="/#performance" style={{ fontWeight: '500', transition: 'color 0.2s', textDecoration: 'none', color: 'var(--text-color)' }}>Performance</a>
+          <a href="/#deployment" style={{ fontWeight: '500', transition: 'color 0.2s', textDecoration: 'none', color: 'var(--text-color)' }}>Deployment</a>
           <Link to="/sensors" style={{ 
             fontWeight: '600', 
             transition: 'all 0.2s', 

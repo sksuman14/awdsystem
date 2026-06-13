@@ -8,6 +8,7 @@ import FirmwareCloudSection from '../components/FirmwareCloudSection';
 import PerformanceSection from '../components/PerformanceSection';
 import DataVisualizationSection from '../components/DataVisualizationSection';
 import ChallengesLearningsSection from '../components/ChallengesLearningsSection';
+import DeploymentSection from '../components/DeploymentSection';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <FirmwareCloudSection />
       <DataVisualizationSection />
       <PerformanceSection />
+      <DeploymentSection />
       <ChallengesLearningsSection />
     </main>
   );
